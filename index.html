@@ -1,5 +1,5 @@
 <!--This is a sample  bootstrap4 website using different components of bootstrap like fixed navbar,
-  spinners,jumbotrons,cards,carousal,grid system,embedded video, footer.
+  spinners,jumbotrons,cards,carousal,grid system,embedded video, footer.,modal,buttons.
   The page is hosted at https://amanbhadani.github.io/Bootstrap-sample-website/ .
 -->
 
@@ -111,7 +111,34 @@
     <section class="card-body">
       <h1 class="card-title" style="text-align: center;color: black">THE MAGIC PLACE</h4>
       <h3 class="card-text" style="text-align: center;color: #1c1b04;margin-top: 50px">Indian Institute of Engineering Science and Technology, Shibpur (IIEST Shibpur) is a public university located at Shibpur, Howrah district, West Bengal. It is recognized as an Institute of National Importance under MHRD by the Government of</h3>
-      <a href="#" class="btn btn-primary align-middle">KNOW MORE</a>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+       know more
+      </button>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">IIEST SHIBPUR</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>Indian Institute of Engineering Science and Technology, Shibpur (IIEST Shibpur) is a public university located at Shibpur, Howrah district, West Bengal. It is recognized as an Institute of National Importance under MHRD by the Government of India along with IITs and NITs.[2] The institute offers bachelor's, master's and doctorate degrees in engineering and architecture as well as master's and doctorate degrees in science and management.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </section>
   </section>
 </section>
